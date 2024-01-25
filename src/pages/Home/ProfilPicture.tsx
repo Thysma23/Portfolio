@@ -1,11 +1,11 @@
 export default function ProfilPicture() {
 
     return (
-        <div className="bg-blue-500 p-8 rounded-full h-72 w-72 overflow-hidden flex justify-center">
+        <div className="bg-blue-500 p-8 rounded-full h-72 w-72 overflow-hidden flex justify-center my-auto">
             <img
                 className="max-h-80 max-w-80 w-72 h-72 -mt-7"
                 src={require("../../assets/images/profil_picture.png")}
-                alt="Photo de la tếte de Mathys Meunier"
+                alt="tếte de Mathys Meunier"
             />
         </div>
     )
