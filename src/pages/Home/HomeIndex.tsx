@@ -1,9 +1,10 @@
 import ProfilPicture from "./ProfilPicture";
 import Welcome from "./Welcome";
+import Main from "../../components/container/Main";
 
 export default function HomeIndex() {
-    return <main className="bg-gradient-to-r from-gray-400 via-gray-600 to-blue-800 h-screen flex justify-around align-middle">
+    return <Main className="flex justify-around align-middle">
         <Welcome />
         <ProfilPicture />
-    </main>
+    </Main>
 }
