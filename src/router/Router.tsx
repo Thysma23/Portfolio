@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/HomeIndex';
 import NavBar from '../components/NavBar/NavBarIndex';
+import Objectives from '../pages/Objectives/Objectives';
 
 export default function Router() {
   return (
@@ -8,6 +9,7 @@ export default function Router() {
       <NavBar />
       <Routes>
         <Route path="" element={<Home />} />
+        <Route path="objectives" element={<Objectives />} />
       </Routes>
     </BrowserRouter>
   )
