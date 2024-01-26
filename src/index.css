@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    main {
+        @apply h-screen
+    }
     h1 {
         @apply mt-4 text-3xl font-extrabold tracking-[-0.04em] text-black;
     }

@@ -1,10 +1,9 @@
-import Main from "../../components/container/Main"
 import TimelineContainer from "../../components/timeline/TimelineContainer"
 import TimelineItem from "../../components/timeline/TimelineItem"
 
 export default function ObjectivesIndex() {
   return (
-    <Main className="pt-24 mx-32">
+    <main className="pt-24 mx-32">
       <h1>Mes objectifs</h1>
       <div className="flex space-x-4 mt-5">
         <div>
@@ -50,6 +49,6 @@ export default function ObjectivesIndex() {
           </TimelineContainer>
         </aside>
       </div>
-    </Main>
+    </main>
   )
 }
