@@ -11,7 +11,9 @@ export default function Welcome() {
             <p className="text-xl font-medium">
                 Étudiant en 3<span className="text-sm leading-3">e</span> année de BUT Informatique
             </p>
-            <BlueRoundButton className="mt-2">Télécharger mon cv</BlueRoundButton>
+            <a href={require("../../assets/cv/CvStageDevWebMeunierMathys.pdf")} download="CvMeunierMathys" target="_blank" rel="noreferrer">
+                <BlueRoundButton className="mt-2">Télécharger mon cv</BlueRoundButton>
+            </a>
         </div>
     )
 }
