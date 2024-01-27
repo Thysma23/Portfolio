@@ -15,6 +15,11 @@ type logoAvailable =
     | "MySQL"
     | "Oracle Database"
     | "OCaml"
-    | "TailwindCSS";
+    | "TailwindCSS"
+    | "Android Studio"
+    | "Api RESTful"
+    | "Golang"
+    | "SQL";
+
 
 export default logoAvailable;

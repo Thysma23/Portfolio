@@ -8,7 +8,7 @@ function App() {
       "via-gray-600",
       "to-blue-800",
       "h-screen",
-      "overflow-hidden")
+      "overflow-x-hidden")
   })
 
   return (
