@@ -8,7 +8,9 @@ import Skills from "../pages/skills/SkillsIndex"
 export default function Router() {
   return (
     <BrowserRouter>
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="objectives" element={<Objectives />} />

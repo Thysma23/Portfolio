@@ -7,7 +7,8 @@ function App() {
       "from-gray-400",
       "via-gray-600",
       "to-blue-800",
-      "h-screen")
+      "h-screen",
+      "overflow-hidden")
   })
 
   return (

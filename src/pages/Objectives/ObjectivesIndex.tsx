@@ -3,9 +3,9 @@ import TimelineItem from "../../components/timeline/TimelineItem"
 
 export default function ObjectivesIndex() {
   return (
-    <main className="pt-24 mx-32">
-      <h1>Mes objectifs</h1>
-      <div className="flex space-x-4 mt-5">
+    <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-5 sm:mx-16 md:mx-20 lg:mx-32">
+      <h1 className="block sm:hidden md:block">Mes objectifs</h1>
+      <div className="mt-5 sm:mt-0 md:mt-5 2xl:flex 2xl:space-x-4">
         <div>
           <section>
             <h2>Objectifs de stage</h2>
@@ -30,7 +30,7 @@ export default function ObjectivesIndex() {
             </p>
           </section>
         </div>
-        <aside>
+        <aside className="hidden 2xl:block">
           <TimelineContainer>
             <TimelineItem date={{ datetime: new Date("2018-09-01"), text: "Septembre 2018" }}
               lieu={{
