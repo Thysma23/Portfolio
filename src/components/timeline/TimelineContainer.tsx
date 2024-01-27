@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 export type TimelineContainerProps = {
-    children?: JSX.Element[] | JSX.Element
+    children?: ReactNode
 }
 
 export default function TimelineContainer({ children }: TimelineContainerProps) {
