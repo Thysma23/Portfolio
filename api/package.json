@@ -1,0 +1,28 @@
+{
+  "name": "api-porfolio",
+  "version": "1.0.0",
+  "description": "Une Api pour mon portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thysma23/portfolio.git"
+  },
+  "keywords": [
+    "api",
+    "javascript",
+    "porfolio"
+  ],
+  "author": "Mathys Meunier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thysma23/portfolio/issues"
+  },
+  "homepage": "https://github.com/Thysma23/portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "octokit": "^3.1.2"
+  }
+}
