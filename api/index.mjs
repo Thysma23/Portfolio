@@ -1,9 +1,11 @@
 import express from "express";
 import { Octokit } from "octokit";
 import * as fs from "fs";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors());
 const oldConsoleLog = console.log;
 console.log = (...data) => oldConsoleLog(new Date().toLocaleString(), ...data);
 
