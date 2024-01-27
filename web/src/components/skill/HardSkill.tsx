@@ -1,4 +1,4 @@
-import Skill from "./Skill";
+import Skill from "./SkillIndex";
 import logoAvailable from "./logoAvailable.type";
 import IconeAndName from "./IconeAndName";
 

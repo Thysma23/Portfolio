@@ -1,4 +1,4 @@
-import Skill from "./Skill";
+import Skill from "./SkillIndex";
 
 type SkillsProps = {
     className?: Element['className'],
