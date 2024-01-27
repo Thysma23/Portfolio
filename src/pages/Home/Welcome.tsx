@@ -2,7 +2,7 @@ import BlueRoundButton from "../../components/Buttons/BlueRoundButton";
 
 export default function Welcome() {
     return (
-        <div className=" text-slate-900 my-24 md:my-auto">
+        <div className=" text-slate-900 my-24 sm:mt-40 md:my-auto">
             <p className="text-4xl font-bold">
                 Bonjour,
                 <br />
