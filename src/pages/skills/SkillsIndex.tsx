@@ -12,7 +12,7 @@ export default function SkillsIndex() {
     const otherSkills: logoAvailable[] = [
         "Git", "Api RESTful"];
     const languageSKills: logoAvailable[] = [
-        "Python", "PHP", "Kotlin", "TypeScript", "JavaScript", "SQL", "OCaml", "Golang"];
+        "Python", "TypeScript", "JavaScript", "Kotlin", "SQL", "PHP", "OCaml", "Golang"];
     const softSkills: string[] = [
         "Travail en équipe", "Curiosité", "Autonomie", "Polyvalence", "Esprit logique", "Facilité d'apprentissage", "Bienveillance"]
 
