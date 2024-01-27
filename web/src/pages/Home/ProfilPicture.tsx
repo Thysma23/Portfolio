@@ -1,5 +1,4 @@
 export default function ProfilPicture() {
-
     return (
         <div className="bg-blue-500 p-8 rounded-full h-72 w-72 overflow-hidden flex justify-center my-0 md:my-auto">
             <img

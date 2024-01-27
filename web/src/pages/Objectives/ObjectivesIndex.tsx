@@ -38,14 +38,16 @@ export default function ObjectivesIndex() {
                 name: "Nogent Sur Marne (94130)"
               }}
               title="Lycée Louis Armand"
-              description="BAC Général spécialités Math NSI." />
+              description="BAC Général spécialités Math NSI."
+               />
             <TimelineItem date={{ datetime: new Date("2021-09-01"), text: "Septembre 2021" }}
               lieu={{
                 link: "",
                 name: "Nantes (44000)"
               }}
               title="IUT De Nantes"
-              description="BUT Informatique parcours réalisation d'applications : conception, développement, validation." />
+              description="BUT Informatique parcours réalisation d'applications : conception, développement, validation." 
+              />
           </TimelineContainer>
         </aside>
       </div>

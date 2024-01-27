@@ -21,5 +21,4 @@ type logoAvailable =
     | "Golang"
     | "SQL";
 
-
 export default logoAvailable;

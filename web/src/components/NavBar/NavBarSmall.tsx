@@ -8,6 +8,7 @@ type NavBarSmallProps = {
 
 export default function NavBarSmall({ onSelect }: NavBarSmallProps) {
     const location = useLocation()
+    
     return (
         <ul className="flex sm:hidden flex-col h-screen absolute mt-14 bg-slate-700 w-full border-t border-gray-900 opacity-90">
             {routes.map((route, index) =>

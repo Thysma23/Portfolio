@@ -16,5 +16,6 @@ export default function NavButton({ children, location, onSelect, link }: NavBut
                 to={link} onClick={onSelect}>
                 {children}
             </Link>
-        </li>)
+        </li>
+        )
 }
