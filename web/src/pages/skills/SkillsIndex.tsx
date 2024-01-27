@@ -1,6 +1,6 @@
-import HardSkill from "../../components/Skill/HardSkill"
-import logoAvailable from "../../components/Skill/logoAvailable.type"
-import SoftSkill from "../../components/Skill/SoftSkill"
+import HardSkill from "../../components/skill/HardSkill"
+import logoAvailable from "../../components/skill/logoAvailable.type"
+import SoftSkill from "../../components/skill/SoftSkill"
 
 export default function SkillsIndex() {
     const webSkills: logoAvailable[] = [

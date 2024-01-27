@@ -1,4 +1,4 @@
-import BlueRoundButton from "../../components/Buttons/BlueRoundButton";
+import BlueRoundButton from "../../components/buttons/BlueRoundButton";
 
 export default function Welcome() {
     return (
