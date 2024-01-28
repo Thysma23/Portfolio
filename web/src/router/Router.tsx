@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/home/HomeIndex';
 import NavBar from '../components/navBar/NavBarIndex';
 import Objectives from '../pages/objectives/ObjectivesIndex';
-import Projects from "../pages/projects/ProjectIndex"
+import Projects from "../pages/projects/ProjectsIndex"
 import Skills from "../pages/skills/SkillsIndex"
 
 export default function Router() {

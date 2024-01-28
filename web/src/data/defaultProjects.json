@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Application Mobile de suivie médical",
+        "description": "Application mobile android avec React Native réalisé avec deux autres étudiants. Je me suis chargé de l'aspect fonctionnel de l'application. L’objectif était de proposer un service de suivi médical avec un maximum de fonctionnalités (Reconnaissance textuelle, notifications, messagerie, rapports mensuels etc).",
+        "language": "TypeScript",
+        "last_update": "2024-01-18T10:21:00"
+    },
+    {
+        "name": "Site dynamique avec API REST en ReactJS",
+        "description": "Site web réalisé avec ReactJS et une API REST en NodeJS. Je me suis chargé principalement de l'aspect front-end du site. Le site permets de générer des recettes à partir d'une liste d'ingrédients.",
+        "language": "JavaScript",
+        "last_update": "2023-04-07T5:39:00"
+    },
+    {
+        "name": "Site dynamique de e-commerce en PHP",
+        "description": "Site web réalisé avec CodeIgniter. Je me suis chargé de l'aspect back-end du site. Le site permets de gérer un catalogue de vêtement et de passer des commandes avec des pages de gestion dédié aux administrateurs.",
+        "language": "PHP",
+        "last_update": "2023-02-01T00:00:00"
+    }
+]
