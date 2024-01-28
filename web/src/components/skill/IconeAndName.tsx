@@ -22,37 +22,38 @@ import { ReactComponent as GoLogo } from "../../assets/icones/go.svg"
 import { ReactComponent as SqlLogo } from "../../assets/icones/sql.svg"
 
 type IconeProps = {
+    className?: Element['className'],
     link: logoAvailable,
 }
 
-export default function IconeAndName({ link }: IconeProps) {
-    const className = "w-4 h-4 inline-block mb-1";
+export default function IconeAndName({ className, link }: IconeProps) {
+    const classNameDefault = "w-4 h-4 inline-block mb-1";
     const getLogo = () => {
         switch (link) {
             case "Kotlin":
-                return <KotlinLogo title="logo Kotlin" className={className} />;
+                return <KotlinLogo title="logo Kotlin" className={classNameDefault} />;
             case "Python":
-                return <PythonLogo title="logo Python" className={className} />;
+                return <PythonLogo title="logo Python" className={classNameDefault} />;
             case "PHP":
                 return <PhpLogo title="logo PHP" className={"inline-block mb-1 -mt-[0.12rem] w-6 h-6"} />;
             case "ReactJS":
-                return <ReactLogo title="logo React" className={className} />;
+                return <ReactLogo title="logo React" className={classNameDefault} />;
             case "React Native":
-                return <ReactNativeLogo title="logo React Native" className={className} />;
+                return <ReactNativeLogo title="logo React Native" className={classNameDefault} />;
             case "CodeIgniter":
-                return <CodeIgniterLogo title="logo CodeIgniter" className={className} />;
+                return <CodeIgniterLogo title="logo CodeIgniter" className={classNameDefault} />;
             case "CSS":
-                return <CssLogo title="logo CSS" className={className} />;
+                return <CssLogo title="logo CSS" className={classNameDefault} />;
             case "HTML":
-                return <HtmlLogo title="logo HTML" className={className} />;
+                return <HtmlLogo title="logo HTML" className={classNameDefault} />;
             case "JavaScript":
-                return <JavaScriptLogo title="logo JavaScript" className={className} />;
+                return <JavaScriptLogo title="logo JavaScript" className={classNameDefault} />;
             case "NodeJS":
                 return <NodeJSLogo title="logo NodeJS" className={"inline-block w-6 h-6 -mt-2 -mb-1"} />;
             case "TypeScript":
-                return <TypeScriptLogo title="logo TypeScript" className={className} />;
+                return <TypeScriptLogo title="logo TypeScript" className={classNameDefault} />;
             case "Git":
-                return <GitLogo title="logo Git" className={className} />;
+                return <GitLogo title="logo Git" className={classNameDefault} />;
             case "MongoDB":
                 return <MongoDBLogo title="logo MongoDB" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
             case "MySQL":
@@ -60,22 +61,22 @@ export default function IconeAndName({ link }: IconeProps) {
             case "Oracle Database":
                 return <OracleDatabaseLogo title="logo Oracle Database" className={"inline-block -mt-2 -mb-1 mr-[0.12rem] r- w-9 h-9"} />;
             case "TailwindCSS":
-                return <TailwindCSSLogo title="logo TailwindCSS" className={className} />;
+                return <TailwindCSSLogo title="logo TailwindCSS" className={classNameDefault} />;
             case "OCaml":
-                return <OcamlLogo title="logo OCaml" id="abdabz" className={className} />;
+                return <OcamlLogo title="logo OCaml" id="abdabz" className={classNameDefault} />;
             case "Android Studio":
-                return <AndroidLogo title="logo Android Studio" className={className} />;
+                return <AndroidLogo title="logo Android Studio" className={classNameDefault} />;
             case "Api RESTful":
-                return <ApiLogo title="logo API" className={className} />;
+                return <ApiLogo title="logo API" className={classNameDefault} />;
             case "Golang":
                 return <GoLogo title="logo Go" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
             case "SQL":
-                return <SqlLogo title="logo SQL" className={className} />;
+                return <SqlLogo title="logo SQL" className={classNameDefault} />;
         }
     };
 
     return (
-        <span className="inline-block underline h-5 my-1">
+        <span className={`inline-block h-5 my-1 ${className}`}>
             {getLogo()}{link}
         </span>
     );
