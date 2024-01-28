@@ -1,22 +1,22 @@
 [
     {
-        "name": "objectifs",
+        "name": "Objectifs",
         "link": "objectives"
     },
     {
-        "name": "projets",
+        "name": "Projets",
         "link": "projects"
     },
     {
-        "name": "compétences",
+        "name": "Compétences",
         "link": "skills"
     },
     {
-        "name": "reflexions",
+        "name": "Reflexions",
         "link": "reflections"
     },
     {
-        "name": "contacts",
+        "name": "Contacts",
         "link": "contacts"
     }
 ]
