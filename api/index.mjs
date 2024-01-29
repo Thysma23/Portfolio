@@ -19,7 +19,7 @@ import express from "express";
 import { Octokit } from "octokit";
 import * as fs from "fs";
 import cors from "cors";
-
+import ReadLine from "readline";
 const app = express();
 
 app.use(cors());
@@ -83,5 +83,30 @@ const updateInterval = () => {
   setInterval(update, 1_800_000) // 30 minutes
 }
 
+const readline = ReadLine.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const commands = () => {
+  readline.question("", async (com) => {
+    switch (com) {
+      case "update":
+        await update();
+        break;
+      case "help":
+        console.log("Commands: update, help");
+        break;
+      case "exit":
+        process.exit(0);
+      default:
+        console.log("Unknown command");
+        break;
+    }
+    commands();
+  })
+}
+
+commands();
 update()
 updateInterval();
