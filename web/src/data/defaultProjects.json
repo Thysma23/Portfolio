@@ -9,12 +9,18 @@
         "name": "Site dynamique avec API REST en ReactJS",
         "description": "Site web réalisé avec ReactJS et une API REST en NodeJS. Je me suis chargé principalement de l'aspect front-end du site. Le site permets de générer des recettes à partir d'une liste d'ingrédients.",
         "language": "JavaScript",
-        "last_update": "2023-04-07T5:39:00"
+        "last_update": "2023-04-07T05:39:00"
     },
     {
         "name": "Site dynamique de e-commerce en PHP",
         "description": "Site web réalisé avec CodeIgniter. Je me suis chargé de l'aspect back-end du site. Le site permets de gérer un catalogue de vêtement et de passer des commandes avec des pages de gestion dédié aux administrateurs.",
         "language": "PHP",
         "last_update": "2023-02-01T00:00:00"
+    },
+    {
+        "name": "Jeu d'échec martien en Kotlin",
+        "description": "Jeu d'échec martien réalisé en Kotlin avec une interface graphique en JavaFX.",
+        "language": "Kotlin",
+        "last_update": "2022-06-01T00:00:00"
     }
 ]
