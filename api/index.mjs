@@ -29,35 +29,42 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-const updateRepos = () => {
-  setInterval(async () => {
-    console.log("Updating repos");
-    const datas = await octokit.request('GET /user/repos', {
-      visibility: 'public',
-      sort: 'updated',
-      per_page: 50,
-    });
-    if (datas.status !== 200) {
-      console.error("Error while fetching repos");
+const update = async () => {
+  console.log("Updating repos");
+  const datas = await octokit.request('GET /user/repos', {
+    visibility: 'public',
+    sort: 'updated',
+    per_page: 50,
+  });
+  if (datas.status !== 200) {
+    console.error("Error while fetching repos");
+    return;
+  }
+  const repos = datas.data.map((repo) => ({
+    name: repo.name,
+    description: repo.description,
+    url: repo.html_url,
+    language: repo.language,
+    last_update: repo.updated_at,
+    owner: {
+      login: repo.owner.login,
+      url: repo.owner.html_url,
+      avatar: repo.owner.avatar_url,
+    }
+  }))
+
+  fs.writeFile("./repos.json", JSON.stringify(repos), (err) => {
+    if (err) {
+      console.error(err);
       return;
     }
-    const repos = datas.data.map((repo) => ({
-      name: repo.name,
-      description: repo.description,
-      url: repo.html_url,
-      language: repo.language,
-      last_update: repo.updated_at,
-    }))
-
-    fs.writeFile("./repos.json", JSON.stringify(repos), (err) => {
-      if (err) {
-        console.error(err);
-        return;
-      }
-      console.log("File updated");
-    });
-  }, 1_800_000) // 30 minutes
+    console.log("File updated");
+  });
 }
 
+const updateInterval = () => {
+  setInterval(update, 1_800_000) // 30 minutes
+}
 
-updateRepos();
+update()
+updateInterval();
