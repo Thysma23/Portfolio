@@ -1,20 +1,35 @@
 import { ReactComponent as GithubLogo } from "../../assets/icones/github.svg"
 import { ReactComponent as UnivNantesLogo } from "../../assets/icones/univ-nantes.svg"
 import { useState } from "react"
+import USERNAME from "../../data/USERNAME.json"
 
 type ProjectIndexProps = {
     className?: Element['className'],
-    type: "github" | "univ-nantes"
+    type: "github" | "univ-nantes",
+    owner?: {
+        login: string
+        url: string
+        avatar: string
+    }
 }
 
-export default function LogoWithHover({ className, type }: ProjectIndexProps) {
+export default function LogoWithHover({ className, type, owner }: ProjectIndexProps) {
     const [isHover, setIsHover] = useState(false)
+    const iAmOwner = owner && owner.login === USERNAME
     return (
         <div className={`relative ${className}`} onMouseLeave={() => setIsHover(false)}>
-            {isHover && <p className="absolute w-40 p-3 bottom-[105%] left-1/2 transform -translate-x-1/2 bg-gray-800 text-slate-300 rounded-md">{type === "github" ?
+            {isHover && <p className="absolute inline-block w-40 p-3 bottom-[105%] right-0 xl:left-1/2 xl:transform xl:-translate-x-1/2 bg-gray-800 text-slate-300 rounded-md">{type === "github" ?
                 <>
-                    Projet personnel.<br />
-                    Les données sont mises à jour via une api toute les 30 minutes"
+                    {iAmOwner ? "Projet personnel,"
+                        : owner &&
+                        <>
+                            <img src={owner.avatar} alt={`Avatar de ${owner.login}`} className="w-4 h-4 inline-block rounded-full mb-1"/>
+                            <a href={owner.url} target="_blank" rel="noreferrer" className="hover:underline">
+                                Auteur : {owner.login},
+                            </a>
+                        </>
+                    }<br />
+                    Les données sont mises à jour via une api toute les 30 minutes."
                 </> : "Projet Universitaire"}</p>}
             {type === "github"
                 ? <GithubLogo className="w-6 h-6" onMouseEnter={() => setIsHover(true)} />
