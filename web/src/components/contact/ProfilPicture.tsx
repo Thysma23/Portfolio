@@ -15,11 +15,15 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-export default function ProfilPicture() {
+type ProfilPictureProps = {
+    className?: Element['className'],
+}
+
+export default function ProfilPicture({ className }: ProfilPictureProps) {
     return (
-        <div className="bg-blue-500 p-8 rounded-full h-72 w-72 overflow-hidden flex justify-center my-0 md:my-auto">
+        <div className={`bg-blue-500 p-8 rounded-full overflow-hidden flex justify-center my-0 md:my-auto ${className}`}>
             <img
-                className="max-h-80 max-w-80 w-72 h-72 -mt-7"
+                className="max-h-80 max-w-80 transform translate-y-[-4%] w-[120%] h-[120%]"
                 src={require("../../assets/images/profil_picture.png")}
                 alt="tếte de Mathys Meunier"
             />
