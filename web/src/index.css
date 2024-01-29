@@ -14,10 +14,9 @@
     }
     
     section {
-        @apply bg-gray-200 p-3 rounded-lg shadow-sm transition-shadow duration-300 ease-in-out hover:shadow-2xl ;
+        @apply bg-gray-200 p-3 rounded-lg shadow-md transition-shadow duration-300 ease-in-out hover:shadow-2xl ;
     }
     section p {
         @apply mt-3 text-sm text-slate-500;
     }
 }
-
