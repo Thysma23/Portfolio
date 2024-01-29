@@ -1,5 +1,5 @@
 import HardSkill from "../../components/skill/HardSkill"
-import logoAvailable from "../../components/skill/logoAvailable.type"
+import logoAvailable from "../../components/logo/logoAvailable.type"
 import SoftSkill from "../../components/skill/SoftSkill"
 
 export default function SkillsIndex() {
@@ -17,7 +17,7 @@ export default function SkillsIndex() {
         "Travail en équipe", "Curiosité", "Autonomie", "Polyvalence", "Esprit logique", "Facilité d'apprentissage", "Bienveillance"]
 
     return (
-        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-5 sm:mx-16 md:mx-20 lg:mx-32">
+        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-5 sm:mx-16 md:mx-20 lg:mx-32 h-full pb-5">
             <h1 className="block sm:hidden md:block">Mes compétences</h1>
             <div className="flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 ">
                 <section className="2xl:w-[50vh]">

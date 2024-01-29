@@ -6,7 +6,7 @@ export default function NavBarMedium() {
     const location = useLocation();
 
     return (
-        <ul className="hidden absolute border-t border-gray-900 px-4 justify-between bg-slate-700 h-14 mt-14 w-full
+        <ul className="hidden absolute border-t border-gray-900 mr-4 px-4 justify-between bg-slate-700 h-14 mt-14 w-full
         sm:flex md:static md:border-0 md:justify-normal md:px-0 md:space-x-4 md:mt-0 md:w-auto">
 
             {routes.map((route, index) =>
