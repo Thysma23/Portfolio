@@ -47,7 +47,7 @@ export default function IconeAndName({ className, link }: IconeProps) {
             case "HTML":
                 return <HtmlLogo title="logo HTML" className={classNameDefault} />;
             case "JavaScript":
-                return <JavaScriptLogo title="logo JavaScript" className={classNameDefault} />;
+                return <JavaScriptLogo title="logo JavaScript" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
             case "NodeJS":
                 return <NodeJSLogo title="logo NodeJS" className={"inline-block w-6 h-6 -mt-2 -mb-1"} />;
             case "TypeScript":

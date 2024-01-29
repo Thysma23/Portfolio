@@ -1,6 +1,6 @@
 import Skill from "./SkillIndex";
-import logoAvailable from "./logoAvailable.type";
-import IconeAndName from "./IconeAndName";
+import logoAvailable from "../logo/logoAvailable.type";
+import IconeAndName from "../logo/IconeAndName";
 
 type SkillsProps = {
     className?: Element['className'],
