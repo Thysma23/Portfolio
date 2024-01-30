@@ -2,9 +2,10 @@
   "name": "api-porfolio",
   "version": "1.0.0",
   "description": "Une Api pour mon portfolio",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "porfolio"
   ],
   "author": "Mathys Meunier",
-  "license": "ISC",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/Thysma23/portfolio/issues"
   },
