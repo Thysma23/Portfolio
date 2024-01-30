@@ -14,20 +14,19 @@
     You can receive a copy of the GNU General Public License
     along with this program at "http://mathysmeunier/license".
 */
-import Contact from "../../components/contact/ContactIndex"
-import { ContactInterface } from "../../interface/ContactInterface"
-import ProfilPicture from "../../components/contact/ProfilPicture";
-import useContacts from "../../hooks/useContacts";
 
-export default function ContactsIndex() {
-    const contacts = useContacts()
+import ProfilPicture from "../components/contact/ProfilPicture";
+import contacts from "../data/contacts.json";
 
-    return (
-        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-5 sm:mx-16 md:mx-20 lg:mx-32">
-            <h1 className="sm:max-md:hidden">Mes contacts</h1>
-            {contacts.map((contact, index) =>
-                <Contact contact={contact} key={index} />
-            )}
-        </main>
-    )
+const convertAvatar = (avatar: string) => {
+    if (avatar.endsWith("Mail")) 
+        return ProfilPicture({ className: "w-12 bg-red-500" })
+    if (avatar.endsWith("Tel"))
+        return ProfilPicture({ className: "w-12 bg-green-400" })
+
+    return avatar
+}
+
+export default function useContacts() {
+    return contacts.map(contact => ({...contact, avatar: convertAvatar(contact.avatar)}))
 }
