@@ -12,7 +12,7 @@ export default function ContactIndex({ contact }: ContactIndexProps) {
     return (
         <a href={contact.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-left bg-slate-300 rounded-lg p-4 shadow-md hover:shadow-2xl w-80" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
             {typeof contact.avatar === 'string'
-                ? <img src={contact.avatar} alt={contact.id} className="w-10 h-10" />
+                ? <img src={contact.avatar} alt={contact.id} className="w-12 h-12" />
                 : contact.avatar
             }
             <div className="flex flex-col">

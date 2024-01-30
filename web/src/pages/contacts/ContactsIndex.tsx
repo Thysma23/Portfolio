@@ -21,7 +21,7 @@ import ProfilPicture from "../../components/contact/ProfilPicture";
 export default function ContactsIndex() {
     const contacts: ContactInterface[] = [{
         id: "mathysmeunier.pro@gmail.com",
-        avatar: <ProfilPicture className="w-6 h-6"/>,
+        avatar: <ProfilPicture className="w-12"/>,
         url: "mailto:mathysmeunier.pro@gmail.com",
         type: "Email"
     },

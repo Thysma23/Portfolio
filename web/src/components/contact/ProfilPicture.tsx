@@ -21,9 +21,9 @@ type ProfilPictureProps = {
 
 export default function ProfilPicture({ className }: ProfilPictureProps) {
     return (
-        <div className={`bg-blue-500 p-8 rounded-full overflow-hidden flex justify-center my-0 md:my-auto ${className}`}>
+        <div className={`bg-blue-500 rounded-full overflow-hidden my-0 md:my-auto mx-0 ${className}`}>
             <img
-                className="max-h-80 max-w-80 transform translate-y-[-4%] w-[120%] h-[120%]"
+                className="transform translate-y-[6%] w-[130%] h-[130%]"
                 src={require("../../assets/images/profil_picture.png")}
                 alt="tếte de Mathys Meunier"
             />

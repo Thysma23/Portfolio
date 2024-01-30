@@ -22,7 +22,7 @@ export default function HomeIndex() {
     return (
         <main className="flex flex-col md:flex-row md:justify-around align-middle items-center ">
             <Welcome />
-            <ProfilPicture className="h-72 w-72"/>
+            <ProfilPicture className="w-72"/>
         </main>
     )
 }
