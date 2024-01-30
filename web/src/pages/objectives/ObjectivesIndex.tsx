@@ -38,7 +38,7 @@ export default function ObjectivesIndex() {
             <h2>Objectifs post-universitaire</h2>
             <p>
               Après l'obtention de mon BUT Informatique, je souhaite continuer mes études en alternance en&nbsp;
-              <a href="https://www.epitech.eu/formation-alternance/master-of-science-post-bac3/" className="text-slate-700">MSC Pro à Epitech Nantes</a>.
+              <a href="https://www.epitech.eu/formation-alternance/master-of-science-post-bac3/" className="text-slate-700 hover:underline">MSC Pro à Epitech Nantes</a>.
               <br />
               Mon choix s'explique par son mode d'enseignement par projets, aliant pratique et collaboration.
             </p>
@@ -56,15 +56,15 @@ export default function ObjectivesIndex() {
               }}
               title="Lycée Louis Armand"
               description="BAC Général spécialités Math NSI."
-               />
+            />
             <TimelineItem date={{ datetime: new Date("2021-09-01"), text: "Septembre 2021" }}
               lieu={{
                 link: "",
                 name: "Nantes (44000)"
               }}
               title="IUT De Nantes"
-              description="BUT Informatique parcours réalisation d'applications : conception, développement, validation." 
-              />
+              description="BUT Informatique parcours réalisation d'applications : conception, développement, validation."
+            />
           </TimelineContainer>
         </aside>
       </div>
