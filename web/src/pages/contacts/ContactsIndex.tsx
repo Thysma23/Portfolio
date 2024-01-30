@@ -14,15 +14,30 @@
     You can receive a copy of the GNU General Public License
     along with this program at "http://mathysmeunier/license".
 */
-
+import Contact from "../../components/contact/ContactIndex"
+import { ContactInterface } from "../../interface/ContactInterface"
 import ProfilPicture from "../../components/contact/ProfilPicture";
-import Welcome from "./Welcome";
 
-export default function HomeIndex() {
+export default function ContactsIndex() {
+    const contacts: ContactInterface[] = [{
+        id: "mathysmeunier.pro@gmail.com",
+        avatar: <ProfilPicture className="w-6 h-6"/>,
+        url: "mailto:mathysmeunier.pro@gmail.com",
+        type: "Email"
+    },
+    {
+        id: "+33 6 25 80 09 15",
+        avatar: "https://avatars.githubusercontent.com/u/87235242?s=80&v=4",
+        url: "tel:+33625800915",
+        type: "Téléphone"
+    }
+    ];
+
     return (
-        <main className="flex flex-col md:flex-row md:justify-around align-middle items-center ">
-            <Welcome />
-            <ProfilPicture className="h-72 w-72"/>
+        <main className="flex flex-col justify-center items-center">
+            {contacts.map((contact, index) =>
+                <Contact contact={contact} key={index} />
+            )}
         </main>
     )
 }

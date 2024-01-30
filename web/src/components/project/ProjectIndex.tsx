@@ -1,5 +1,5 @@
 /** 
-    Copyright (C) 2023 Mathys Meunier
+    Copyright (C) 2024 Mathys Meunier
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,13 +15,13 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import { Repo } from "../../hooks/useRepos"
 import logoAvailable from "../logo/logoAvailable.type"
 import IconeAndName from "../logo/IconeAndName"
 import LogoWithHover from "../logo/LogoWithHover"
+import { RepositoryInterface } from "../../interface/RepositoryInterface"
 
 type ProjectIndexProps = {
-    repo: Repo
+    repo: RepositoryInterface
 }
 
 export default function ProjectIndex({ repo }: ProjectIndexProps) {

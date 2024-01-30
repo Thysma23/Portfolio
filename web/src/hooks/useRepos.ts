@@ -1,5 +1,5 @@
 /** 
-    Copyright (C) 2023 Mathys Meunier
+    Copyright (C) 2024 Mathys Meunier
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,20 +18,7 @@
 import { useState, useEffect } from 'react';
 import defaultProject from "../data/defaultProjects.json";
 import overrideProject from "../data/overrideProjects.json";
-
-export type Repo = {
-    name: string,
-    description: string,
-    url?: string,
-    language: string,
-    owner?: {
-        login: string,
-        url: string,
-        avatar: string
-    },
-    last_update: Date,
-    is_university_project?: boolean
-};
+import { RepositoryInterface } from '../interface/RepositoryInterface';
 
 type RepoJson = {
     name: string,
@@ -47,7 +34,7 @@ type RepoJson = {
 };
 type RepoJsons = RepoJson[];
 
-const repo_json_to_object = (json: RepoJson): Repo => {
+const repo_json_to_object = (json: RepoJson): RepositoryInterface => {
     const overp = overrideProject.find((p) => p.name === json.name) || null;
     return overp ? {
         ...json, ...overp, last_update:
@@ -58,7 +45,7 @@ const repo_json_to_object = (json: RepoJson): Repo => {
 };
 
 export default function useRepos() {
-    const [repos, setRepos] = useState<Repo[]>(defaultProject.map(repo_json_to_object));
+    const [repos, setRepos] = useState<RepositoryInterface[]>(defaultProject.map(repo_json_to_object));
 
     useEffect(() => {
         fetch('http://localhost:8080/', {
