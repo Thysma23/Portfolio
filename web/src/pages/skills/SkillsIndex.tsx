@@ -39,7 +39,7 @@ export default function SkillsIndex() {
             <div className="flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 ">
                 <section className="2xl:w-[50vh]">
                     <h2>
-                        Languages de programmation
+                        Langages de programmation
                     </h2>
                     <p>
                         {

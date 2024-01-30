@@ -2,5 +2,9 @@
     {
         "name": "MedicApp",
         "is_university_project": true
+    },
+    {
+        "name": "Api-professionnel-sante-fr",
+        "is_university_project": true
     }
 ]
