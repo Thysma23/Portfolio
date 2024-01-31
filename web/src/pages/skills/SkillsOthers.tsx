@@ -6,16 +6,14 @@ export default function SkillOthers() {
         "Git", "Api RESTful"];
     return (
         <section className="mt-5">
-            <h2>
+            <h2 className="pb2">
                 Autres compétences
             </h2>
-            <p>
                 {
                     otherSkills.map((skill, index) => {
                         return <HardSkill className="mr-2" skill={skill} key={index} />
                     })
                 }
-            </p>
         </section>
     )
 }

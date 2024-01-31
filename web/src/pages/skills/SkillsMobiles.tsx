@@ -6,16 +6,14 @@ export default function SkillsMobiles() {
         "React Native", "Android Studio"];
     return (
         <section className="mt-5">
-            <h2>
+            <h2 className="pb2">
                 Compétences Mobile
             </h2>
-            <p>
-                {
-                    mobileSkills.map((skill, index) => {
-                        return <HardSkill className="mr-2" skill={skill} key={index} />
-                    })
-                }
-            </p>
+            {
+                mobileSkills.map((skill, index) => {
+                    return <HardSkill className="mr-2" skill={skill} key={index} />
+                })
+            }
         </section>
     )
 }

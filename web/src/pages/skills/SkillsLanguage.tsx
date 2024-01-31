@@ -7,16 +7,14 @@ export default function SkillsLanguage() {
 
     return (
         <section className="2xl:w-[50vh]">
-            <h2>
+            <h2 className="pb2">
                 Langages de programmation
             </h2>
-            <p>
-                {
-                    languageSKills.map((skill, index) => {
-                        return <HardSkill className="mr-2" skill={skill} key={index} />
-                    })
-                }
-            </p>
+            {
+                languageSKills.map((skill, index) => {
+                    return <HardSkill className="mr-2" skill={skill} key={index} />
+                })
+            }
         </section>
     )
 }

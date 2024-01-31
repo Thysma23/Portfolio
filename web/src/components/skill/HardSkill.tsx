@@ -17,7 +17,7 @@
 
 import Skill from "./SkillIndex";
 import logoAvailable from "@/components/logo/logoAvailable.type";
-import IconeAndName from "@/components/logo/IconeAndName";
+import IconeAndName from "@/components/logo/LogoAndName";
 
 type SkillsProps = {
     className?: Element['className'],

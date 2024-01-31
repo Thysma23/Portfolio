@@ -16,7 +16,7 @@
 */
 
 import logoAvailable from "@/components/logo/logoAvailable.type"
-import IconeAndName from "@/components/logo/IconeAndName"
+import IconeAndName from "@/components/logo/LogoAndName"
 import LogoWithHover from "@/components/logo/LogoWithHover"
 import { RepositoryInterface } from "@/interface/RepositoryInterface"
 
