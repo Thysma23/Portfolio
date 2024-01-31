@@ -34,6 +34,8 @@ export default function LogoWithHover({ className, type, owner }: ProjectIndexPr
     const [isHover, setIsHover] = useState(false);
     const iAmOwner = owner && owner.login === USERNAME;
 
+    const openModal = () => setIsHover(true);
+
     return (
         <div className={`relative ${className}`} onMouseLeave={() => setIsHover(false)}>
             {isHover && <p className="absolute inline-block w-40 p-3 bottom-[105%] right-0 xl:left-1/2 xl:transform xl:-translate-x-1/2 bg-gray-800 text-slate-300 rounded-md">{type === "github" ?
@@ -50,8 +52,8 @@ export default function LogoWithHover({ className, type, owner }: ProjectIndexPr
                     Les données sont mises à jour via une api toute les 30 minutes.
                 </> : "Projet Universitaire"}</p>}
             {type === "github"
-                ? <GithubLogo className="w-6 h-6" onMouseEnter={() => setIsHover(true)} />
-                : <UnivNantesLogo className="w-6 h-6" onMouseEnter={() => setIsHover(true)} />}
+                ? <GithubLogo className="w-6 h-6" onMouseEnter={openModal} />
+                : <UnivNantesLogo className="w-6 h-6" onMouseEnter={openModal} />}
         </div>
     );
 };
