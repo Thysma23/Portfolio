@@ -55,7 +55,7 @@ export default function useRepos() {
             response.json().then((datas: RepoJsons) => {
                 setRepos(datas.map(repo_json_to_object).concat(defaultProject.map(repo_json_to_object)));
             });
-        });
+        }).catch(error => console.error(error));
     }, []);
 
     return repos;
