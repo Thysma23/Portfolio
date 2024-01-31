@@ -15,10 +15,10 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import logoAvailable from "../logo/logoAvailable.type"
-import IconeAndName from "../logo/IconeAndName"
-import LogoWithHover from "../logo/LogoWithHover"
-import { RepositoryInterface } from "../../interface/RepositoryInterface"
+import logoAvailable from "@/components/logo/logoAvailable.type"
+import IconeAndName from "@/components/logo/IconeAndName"
+import LogoWithHover from "@/components/logo/LogoWithHover"
+import { RepositoryInterface } from "@/interface/RepositoryInterface"
 
 type ProjectIndexProps = {
     repo: RepositoryInterface

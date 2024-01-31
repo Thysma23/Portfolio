@@ -1,4 +1,4 @@
-import { ContactInterface } from "../../interface/ContactInterface"
+import { ContactInterface } from "@/interface/ContactInterface"
 import { useState } from "react"
 
 type ContactIndexProps = {

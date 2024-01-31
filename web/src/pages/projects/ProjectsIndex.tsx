@@ -15,8 +15,8 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import Project from "../../components/project/ProjectIndex";
-import useRepos from "../../hooks/useRepos";
+import Project from "@/components/project/ProjectIndex";
+import useRepos from "@/hooks/useRepos";
 
 export default function ProjectsIndex() {
     const repos = useRepos()

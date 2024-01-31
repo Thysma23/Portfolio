@@ -15,7 +15,7 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import ProfilPicture from "../../components/contact/ProfilPicture";
+import ProfilPicture from "@/components/contact/ProfilPicture";
 import Welcome from "./Welcome";
 
 export default function HomeIndex() {

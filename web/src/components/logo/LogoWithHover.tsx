@@ -15,10 +15,10 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import { ReactComponent as GithubLogo } from "../../assets/icones/github.svg"
-import { ReactComponent as UnivNantesLogo } from "../../assets/icones/univ-nantes.svg"
+import { ReactComponent as GithubLogo } from "@/assets/icones/github.svg"
+import { ReactComponent as UnivNantesLogo } from "@/assets/icones/univ-nantes.svg"
 import { useState } from "react"
-import USERNAME from "../../data/USERNAME.json"
+import USERNAME from "@/data/USERNAME.json"
 
 type ProjectIndexProps = {
     className?: Element['className'],

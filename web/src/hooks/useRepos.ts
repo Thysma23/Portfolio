@@ -16,9 +16,9 @@
 */
 
 import { useState, useEffect } from 'react';
-import defaultProject from "../data/defaultProjects.json";
-import overrideProject from "../data/overrideProjects.json";
-import { RepositoryInterface } from '../interface/RepositoryInterface';
+import defaultProject from "@/data/defaultProjects.json";
+import overrideProject from "@/data/overrideProjects.json";
+import { RepositoryInterface } from '@/interface/RepositoryInterface';
 
 type RepoJson = {
     name: string,

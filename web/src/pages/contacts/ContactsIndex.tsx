@@ -14,10 +14,10 @@
     You can receive a copy of the GNU General Public License
     along with this program at "http://mathysmeunier/license".
 */
-import Contact from "../../components/contact/ContactIndex"
-import { ContactInterface } from "../../interface/ContactInterface"
-import ProfilPicture from "../../components/contact/ProfilPicture";
-import useContacts from "../../hooks/useContacts";
+import Contact from "@/components/contact/ContactIndex"
+import { ContactInterface } from "@/interface/ContactInterface"
+import ProfilPicture from "@/components/contact/ProfilPicture";
+import useContacts from "@/hooks/useContacts";
 
 export default function ContactsIndex() {
     const contacts = useContacts()

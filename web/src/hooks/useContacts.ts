@@ -15,8 +15,8 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import ProfilPicture from "../components/contact/ProfilPicture";
-import contacts from "../data/contacts.json";
+import ProfilPicture from "@/components/contact/ProfilPicture";
+import contacts from "@/data/contacts.json";
 
 const convertAvatar = (avatar: string) => {
     if (avatar.endsWith("Mail")) 

@@ -15,7 +15,7 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import BlueRoundButton from "../../components/buttons/BlueRoundButton";
+import BlueRoundButton from "@/components/buttons/BlueRoundButton";
 
 export default function Welcome() {
     return (
