@@ -21,7 +21,7 @@ import NavBarMedium from "./NavBarMedium"
 
 export default function NavBarIndex() {
     return (
-        <nav className="bg-slate-700 flex flex-row justify-between w-full h-14 fixed">
+        <nav className="bg-slate-700 flex flex-row justify-between w-full h-14 fixed z-50">
             <NavButtonMain />
             <NavBarMedium />
             <OpenNavBarSmallButton />
