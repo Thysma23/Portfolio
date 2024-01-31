@@ -1,5 +1,9 @@
 [
     {
+        "name": "Home",
+        "link": ""
+    },
+    {
         "name": "Objectifs",
         "link": "objectives"
     },
@@ -14,9 +18,5 @@
     {
         "name": "Reflexions",
         "link": "reflections"
-    },
-    {
-        "name": "Contacts",
-        "link": "contacts"
     }
 ]

@@ -21,7 +21,7 @@
 
 @layer base {
     main {
-        @apply h-screen
+        @apply min-h-[75vh]
     }
     h1 {
         @apply mt-4 text-3xl font-extrabold tracking-[-0.04em] text-black;

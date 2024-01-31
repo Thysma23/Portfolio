@@ -21,7 +21,7 @@ import NavBar from '@/components/navBar/NavBarIndex';
 import Objectives from '@/pages/objectives/ObjectivesIndex';
 import Projects from "@/pages/projects/ProjectsIndex"
 import Skills from "@/pages/skills/SkillsIndex"
-import Contacts from '@/pages/contacts/ContactsIndex';
+import Footer from '@/components/footer/FooterIndex';
 
 export default function Router() {
   return (
@@ -34,8 +34,8 @@ export default function Router() {
         <Route path="objectives" element={<Objectives />} />
         <Route path="projects" element={<Projects />} />
         <Route path="skills" element={<Skills />} />
-        <Route path="contacts" element={<Contacts />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

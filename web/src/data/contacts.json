@@ -1,32 +1,22 @@
-[
-    
-    {
+{
+    "GitHub": {
         "id": "Thysma23",
-        "avatar": "https://avatars.githubusercontent.com/u/87235242?v=4",
         "url": "https://github.com/Thysma23",
-        "src": "GitHub",
-        "type": "coord"
+        "type": "GitHub"
     },
-    {
+    "Linkedin": {
         "id": "Mathys Meunier",
-        "avatar": "https://media.licdn.com/dms/image/D4E35AQEvGDE_B5hC-Q/profile-framedphoto-shrink_200_200/0/1681213259620?e=1707238800&v=beta&t=jttxvm0dJNQW4cZHJZZ0OoDGVafas-j8QoYRh0Al5v8",
         "url": "https://www.linkedin.com/in/mathys-meunier-6aaa65219/",
-        "src": "Linkedin",
-        "type": "coord"
+        "type": "Linkedin"
     },
-    {
+    "Email": {
         "id": "mathysmeunier.pro@gmail.com",
-        "avatar": "ProfilPictureMail",
         "url": "mailto:mathysmeunier.pro@gmail.com",
-        "src": "Email",
-        "type": "coord"
+        "type": "Email"
     },
-    {
+    "Mobile": {
         "id": "+33 6 25 80 09 15",
-        "avatar": "ProfilPictureTel",
         "url": "tel:+33625800915",
-        "src": "Téléphone",
-        "type": "coord"
+        "type": "Mobile"
     }
-    
-]
+}
