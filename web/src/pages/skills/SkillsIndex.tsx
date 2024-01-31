@@ -38,79 +38,71 @@ export default function SkillsIndex() {
             <h1 className="block sm:hidden md:block">Mes compétences</h1>
             <div className="flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 ">
                 <section className="2xl:w-[50vh]">
-                    <h2>
+                    <h2 className="pb-2">
                         Langages de programmation
                     </h2>
-                    <p>
-                        {
-                            languageSKills.map((skill, index) => {
-                                return <HardSkill className="mr-2" skill={skill} key={index} />
-                            })
-                        }
-                    </p>
+                    {
+                        languageSKills.map((skill, index) => {
+                            return <HardSkill className="mr-2" skill={skill} key={index} />
+                        })
+                    }
                 </section>
                 <div className="w-full">
                     <section className="mt-5 2xl:mt-0">
-                        <h2>
+                        <h2 className="pb-2">
                             Compétences Web
                         </h2>
-                        <p>
-                            {
-                                webSkills.map((skill, index) => {
-                                    return <HardSkill className="mr-2" skill={skill} key={index} />
-                                })
-                            }
-                        </p>
+                        {
+                            webSkills.map((skill, index) => {
+                                return <HardSkill className="mr-2" skill={skill} key={index} />
+                            })
+                        }
+
                     </section>
                     <section className="mt-5">
-                        <h2>
+                        <h2 className="pb-2">
                             Compétences Mobile
                         </h2>
-                        <p>
-                            {
-                                mobileSkills.map((skill, index) => {
-                                    return <HardSkill className="mr-2" skill={skill} key={index} />
-                                })
-                            }
-                        </p>
+                        {
+                            mobileSkills.map((skill, index) => {
+                                return <HardSkill className="mr-2" skill={skill} key={index} />
+                            })
+                        }
                     </section>
                     <section className="mt-5">
-                        <h2>
+                        <h2 className="pb-2">
                             Compétences en Base de données
                         </h2>
-                        <p>
-                            {
-                                databaseSkills.map((skill, index) => {
-                                    return <HardSkill className="mr-2" skill={skill} key={index} />
-                                })
-                            }
-                        </p>
+                        {
+                            databaseSkills.map((skill, index) => {
+                                return <HardSkill className="mr-2" skill={skill} key={index} />
+                            })
+                        }
+
                     </section>
                     <section className="mt-5">
-                        <h2>
+                        <h2 className="pb-2">
                             Autres compétences
                         </h2>
-                        <p>
-                            {
-                                otherSkills.map((skill, index) => {
-                                    return <HardSkill className="mr-2" skill={skill} key={index} />
-                                })
-                            }
-                        </p>
+                        {
+                            otherSkills.map((skill, index) => {
+                                return <HardSkill className="mr-2" skill={skill} key={index} />
+                            })
+                        }
+
                     </section>
                 </div>
             </div>
             <section className="mt-5 mb-10">
-                <h2>
+                <h2 className="pb-2">
                     SoftSkills
                 </h2>
-                <p>
-                    {
-                        softSkills.map((skill, index) => {
-                            return <SoftSkill className="mr-2" skill={skill} key={index} />
-                        })
-                    }
-                </p>
+                {
+                    softSkills.map((skill, index) => {
+                        return <SoftSkill className="mr-2" skill={skill} key={index} />
+                    })
+                }
+
             </section>
         </main>
     )

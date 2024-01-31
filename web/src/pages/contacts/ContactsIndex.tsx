@@ -15,8 +15,6 @@
     along with this program at "http://mathysmeunier/license".
 */
 import Contact from "../../components/contact/ContactIndex"
-import { ContactInterface } from "../../interface/ContactInterface"
-import ProfilPicture from "../../components/contact/ProfilPicture";
 import useContacts from "../../hooks/useContacts";
 
 export default function ContactsIndex() {
