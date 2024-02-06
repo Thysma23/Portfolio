@@ -1,9 +1,5 @@
 [
     {
-        "name": "Home",
-        "link": ""
-    },
-    {
         "name": "Objectifs",
         "link": "objectives"
     },
@@ -16,7 +12,7 @@
         "link": "skills"
     },
     {
-        "name": "Reflexions",
+        "name": "Réflexions",
         "link": "reflections"
     }
 ]
