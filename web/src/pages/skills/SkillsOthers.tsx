@@ -6,7 +6,7 @@ export default function SkillOthers() {
         "Git", "Api RESTful"];
     return (
         <section className="mt-5">
-            <h2 className="pb2">
+            <h2 className="pb-2">
                 Autres compétences
             </h2>
                 {

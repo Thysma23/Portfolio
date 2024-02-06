@@ -6,7 +6,7 @@ export default function SkillsSofts() {
 
     return (
         <section className="mt-5 mb-10">
-            <h2 className="pb2">
+            <h2 className="pb-2">
                 SoftSkills
             </h2>
             {

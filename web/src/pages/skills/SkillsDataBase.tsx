@@ -6,14 +6,14 @@ export default function SkillsDataBase() {
         "MySQL", "MongoDB", "Oracle Database"];
     return (
         <section className="mt-5">
-            <h2 className="pb2">
+            <h2 className="pb-2">
                 Compétences en Base de données
             </h2>
-                {
-                    databaseSkills.map((skill, index) => {
-                        return <HardSkill className="mr-2" skill={skill} key={index} />
-                    })
-                }
+            {
+                databaseSkills.map((skill, index) => {
+                    return <HardSkill className="mr-2" skill={skill} key={index} />
+                })
+            }
         </section>
     )
 }

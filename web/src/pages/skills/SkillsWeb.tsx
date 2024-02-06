@@ -6,7 +6,7 @@ export default function SkillsWebs() {
         "HTML", "CSS", "ReactJS", "NodeJS", "TailwindCSS", "CodeIgniter"];
     return (
         <section className="mt-5 2xl:mt-0">
-            <h2 className="pb2">
+            <h2 className="pb-2">
                 Compétences Web
             </h2>
 

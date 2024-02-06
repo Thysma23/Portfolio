@@ -6,7 +6,7 @@ export default function SkillsMobiles() {
         "React Native", "Android Studio"];
     return (
         <section className="mt-5">
-            <h2 className="pb2">
+            <h2 className="pb-2">
                 Compétences Mobile
             </h2>
             {
