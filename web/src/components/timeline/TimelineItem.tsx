@@ -38,7 +38,7 @@ type TimelineItemProps = {
 
 export default function TimelineItem({ date, lieu, title, description }: TimelineItemProps) {
     return (
-        <li className="mb-10 ms-4">
+        <li className="mb-6 ms-4">
             <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-dotted border-gray-900 bg-gray-700"></div>
             <span className="mb-1 text-sm font-normal leading-none :text-gray-500">
                 <time dateTime={date.datetime.toDateString()} >{date.text}</time> —&nbsp;
