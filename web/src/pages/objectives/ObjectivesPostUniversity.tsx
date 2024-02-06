@@ -3,8 +3,8 @@ export default function ObjectivesPostUniversity() {
         <section className="mt-5">
             <h2>Objectifs post-universitaire</h2>
             <p>
-                Après l'obtention de mon BUT Informatique, je souhaite continuer mes études en alternance en&nbsp;
-                <a href="https://www.epitech.eu/formation-alternance/master-of-science-post-bac3/" className="text-slate-700 hover:underline">MSC Pro à Epitech Nantes</a>.
+                Après l'obtention de mon BUT Informatique, je continue mes études en alternance en&nbsp;
+                <a href="https://www.epitech.eu/formation-alternance/master-of-science-post-bac3/" className="text-slate-700 hover:underline" target="_blank" rel="noreferrer">MSC Pro à Epitech Nantes</a>.
                 <br />
                 Mon choix s'explique par son mode d'enseignement par projets, alliant pratique et collaboration.
             </p>

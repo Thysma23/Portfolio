@@ -18,6 +18,7 @@
 import ObjectivesInternship from "./ObjectivesInternship";
 import ObjectivesPostUniversity from "./ObjectivesPostUniversity";
 import ObjectivesSchoolTimeLine from "./ObjectivesSchoolTimeLine";
+import ObjectivesPersonal from "./ObjectivesPersonal";
 
 export default function ObjectivesIndex() {
   return (
@@ -27,6 +28,7 @@ export default function ObjectivesIndex() {
         <div>
           <ObjectivesInternship />
           <ObjectivesPostUniversity />
+          <ObjectivesPersonal />
         </div>
         <ObjectivesSchoolTimeLine />
       </div>
