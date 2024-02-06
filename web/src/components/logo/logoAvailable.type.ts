@@ -36,6 +36,7 @@ type logoAvailable =
     | "Android Studio"
     | "Api RESTful"
     | "Golang"
-    | "SQL";
+    | "SQL"
+    | "MariaDB";
 
 export default logoAvailable;
