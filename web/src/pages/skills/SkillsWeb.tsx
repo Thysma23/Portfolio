@@ -3,7 +3,7 @@ import HardSkill from "@/components/skill/HardSkill";
 
 export default function SkillsWebs() {
     const webSkills: logoAvailable[] = [
-        "HTML", "CSS", "ReactJS", "NodeJS", "TailwindCSS", "CodeIgniter"];
+        "HTML", "CSS", "ReactJS", "TailwindCSS"];
     return (
         <section className="mt-5 2xl:mt-0">
             <h2 className="pb-2">

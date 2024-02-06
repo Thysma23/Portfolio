@@ -18,7 +18,7 @@
 import SkillsLanguage from "./SkillsLanguage"
 import SkillsWebs from "./SkillsWeb"
 import SkillsMobiles from "./SkillsMobiles"
-import SkillsDataBase from "./SkillsDataBase"
+import SkillsBackend from "./SkillsBackend"
 import SkillOthers from "./SkillsOthers"
 import SkillsSofts from "./SkillsSofts"
 
@@ -31,8 +31,8 @@ export default function SkillsIndex() {
                 <SkillsLanguage />
                 <div className="w-full">
                     <SkillsWebs />
+                    <SkillsBackend />
                     <SkillsMobiles />
-                    <SkillsDataBase />
                     <SkillOthers />
                 </div>
             </div>
