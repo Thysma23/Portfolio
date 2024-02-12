@@ -38,6 +38,7 @@ type logoAvailable =
     | "Golang"
     | "SQL"
     | "AngularJS"
-    | "NextJS";
+    | "NextJS"
+    | "MariaDB";
 
 export default logoAvailable;

@@ -30,12 +30,12 @@ export default function Router() {
 
   return (
     <BrowserRouter>
-      <div className='flex h-screen w-screen'>
+      <div className='flex h-full w-screen'>
         {version === 'simplified'
           ? <NavBarSimplified />
           : <NavBarFull />
         }
-        <div className={"h-screen " + (version === "full" ? "w-[85vw]" : "w-screen")}>
+        <div className={"h-full flex flex-col justify-between " + (version === "full" ? "w-[85vw]" : "w-screen")}>
           <Routes>
             <Route path="home" element={<Home />} />
             <Route path="objectives" element={<Objectives />} />

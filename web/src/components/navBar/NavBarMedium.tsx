@@ -15,7 +15,7 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import routes from "@/router/routes.json";
+import routes from "@/data/routes.json";
 import NavButton from "./NavButton";
 import { useLocation } from "react-router-dom";
 

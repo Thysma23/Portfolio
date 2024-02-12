@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import FolderIcons from "./FolderIcons";
 import FolderIconsAvailable from "./FolderIconsAvailable";
-import File from "../file/FileRoute";
 
 type FolderProps = {
     name: string;
@@ -15,7 +14,7 @@ export default function Folder({ name, logo, children }: FolderProps) {
     const onClickhandler = () => setOpen(o => !o)
     return (
         <>
-            <div className="text-white w-full px-2 text-lg hover:bg-[#37373d] inline-block align-middle h-8" onClick={onClickhandler}>
+            <div className="text-slate-200 w-full px-2 text-lg hover:bg-[#37373d] inline-block align-middle h-8" onClick={onClickhandler}>
                 {isOpen
                     ? <span className="material-symbols-outlined align-middle">
                         expand_more

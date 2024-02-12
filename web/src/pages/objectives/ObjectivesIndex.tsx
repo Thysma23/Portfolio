@@ -18,15 +18,17 @@
 import ObjectivesInternship from "./ObjectivesInternship";
 import ObjectivesPostUniversity from "./ObjectivesPostUniversity";
 import ObjectivesSchoolTimeLine from "./ObjectivesSchoolTimeLine";
+import ObjectivesPersonal from "./ObjectivesPersonal";
 
 export default function ObjectivesIndex() {
   return (
     <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-5 sm:px-16 md:px-20 lg:px-32 w-full">
       <h1 className="sm:hidden md:block">Mes objectifs</h1>
-      <div className="mt-5 sm:mt-0 md:mt-5 2xl:flex 2xl:space-x-4">
+      <div className="mt-5 sm:mt-0 md:mt-5 2xl:flex 2xl:space-x-4 mb-5">
         <div>
           <ObjectivesInternship />
           <ObjectivesPostUniversity />
+          <ObjectivesPersonal />
         </div>
         <ObjectivesSchoolTimeLine />
       </div>
