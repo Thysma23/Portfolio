@@ -36,6 +36,8 @@ type logoAvailable =
     | "Android Studio"
     | "Api RESTful"
     | "Golang"
-    | "SQL";
+    | "SQL"
+    | "AngularJS"
+    | "NextJS";
 
 export default logoAvailable;

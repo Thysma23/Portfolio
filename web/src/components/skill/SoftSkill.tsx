@@ -24,7 +24,7 @@ type SkillsProps = {
 
 export default function SoftSkill({ className, skill }: SkillsProps) {
     return (
-        <Skill className={`bg-orange-300 ${className}`}>
+        <Skill className={`bg-cyan-200 ${className}`}>
             <span className="my-1 h-5">{skill}</span>
         </Skill>
     )
