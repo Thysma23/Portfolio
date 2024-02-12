@@ -17,6 +17,7 @@
 
 import Router from "./router/Router";
 import { useEffect } from "react";
+import { VersionProvider } from "./contexts/VersionContext";
 
 function App() {
   useEffect(() => {
@@ -27,7 +28,9 @@ function App() {
   })
 
   return (
-    <Router />
+    <VersionProvider>
+      <Router />
+    </VersionProvider>
   );
 }
 

@@ -11,9 +11,9 @@ export default function FolderIcons({ folder, open }: FolderIconsProps) {
     const getIcone = (() => {
         switch (folder) {
             case "Pages":
-                return open ? <PagesOpen title="dossier Pages Ouvert"/> : <PagesClose title="dossier Pages fermé" />
+                return open ? <PagesOpen title="dossier Pages Ouvert" /> : <PagesClose title="dossier Pages fermé" />
         }
     })()
 
-    return <div className="inline-block w-4 h-4">{getIcone}</div>
+    return <div className="inline-block size-6">{getIcone}</div>
 };

@@ -22,7 +22,7 @@ export default function ProjectsIndex() {
     const repos = useRepos()
 
     return (
-        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-20 lg:mx-32">
+        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-20 lg:px-32 w-full">
             <h1 className="sm:max-md:hidden">Mes projets publics et universitaires</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 -mx-16 pb-16">
                 {
