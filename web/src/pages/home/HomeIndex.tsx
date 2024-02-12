@@ -20,9 +20,9 @@ import Welcome from "./Welcome";
 
 export default function HomeIndex() {
     return (
-        <main className="flex flex-col md:flex-row md:justify-around align-middle items-center ">
+        <main className="flex flex-col md:flex-row md:justify-around align-middle items-center w-full mb-10 sm:mb-0">
             <Welcome />
-            <ProfilPicture className="w-72 h-72 bg-blue-500"/>
+            <ProfilPicture className="w-72 h-72 bg-blue-500" />
         </main>
     )
 }

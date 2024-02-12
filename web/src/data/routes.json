@@ -1,5 +1,9 @@
 [
     {
+        "name": "Home",
+        "link": "home"
+    },
+    {
         "name": "Objectifs",
         "link": "objectives"
     },

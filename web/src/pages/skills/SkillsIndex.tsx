@@ -25,7 +25,7 @@ import SkillsSofts from "./SkillsSofts"
 export default function SkillsIndex() {
 
     return (
-        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 mx-5 sm:mx-16 md:mx-20 lg:mx-32 h-full pb-5">
+        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-5 sm:px-16 md:px-20 lg:px-32 pb-5 w-full">
             <h1 className="block sm:hidden md:block">Mes compétences</h1>
             <div className="flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 ">
                 <SkillsLanguage />

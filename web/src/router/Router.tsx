@@ -17,25 +17,34 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "@/pages/home/HomeIndex"
-import NavBar from '@/components/navBar/NavBarIndex';
+import NavBarSimplified from '@/components/navBar/NavBarIndex';
+import NavBarFull from '@/components/navBar2/NavBarIndex';
 import Objectives from '@/pages/objectives/ObjectivesIndex';
 import Projects from "@/pages/projects/ProjectsIndex"
 import Skills from "@/pages/skills/SkillsIndex"
+import useVersion from '@/hooks/useVersion';
 import Footer from '@/components/footer/FooterIndex';
 
 export default function Router() {
+  const { version } = useVersion()
+
   return (
     <BrowserRouter>
-      <header>
-        <NavBar />
-      </header>
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="objectives" element={<Objectives />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="skills" element={<Skills />} />
-      </Routes>
-      <Footer />
+      <div className='flex h-full w-screen'>
+        {version === 'simplified'
+          ? <NavBarSimplified />
+          : <NavBarFull />
+        }
+        <div className={"h-full flex flex-col justify-between " + (version === "full" ? "w-[85vw]" : "w-screen")}>
+          <Routes>
+            <Route path="home" element={<Home />} />
+            <Route path="objectives" element={<Objectives />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
+          </Routes>
+          {version === "simplified" && <Footer />}
+        </div>
+      </div>
     </BrowserRouter>
   )
 }

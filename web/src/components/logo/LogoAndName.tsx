@@ -47,7 +47,7 @@ type IconeProps = {
 }
 
 export default function IconeAndName({ className, link }: IconeProps) {
-    const classNameDefault = "w-4 h-4 inline-block mb-1";
+    const classNameDefault = "size-4 inline-block mb-1";
     const getLogo = () => {
         switch (link) {
             case "Kotlin":

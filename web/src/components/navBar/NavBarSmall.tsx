@@ -28,7 +28,7 @@ export default function NavBarSmall({ onSelect }: NavBarSmallProps) {
     
     return (
         <ul className="flex sm:hidden flex-col h-screen fixed mt-14 bg-slate-700 w-full border-t border-gray-900 opacity-90">
-            {routes.filter(route => route.link !== "").map((route, index) =>
+            {routes.map((route, index) =>
                 <NavButton key={index} location={location.pathname} link={route.link} onSelect={onSelect}>
                     {route.name}
                 </NavButton>)}
