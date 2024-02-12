@@ -37,6 +37,8 @@ import { ReactComponent as AndroidLogo } from "@/assets/icones/android.svg"
 import { ReactComponent as ApiLogo } from "@/assets/icones/api.svg"
 import { ReactComponent as GoLogo } from "@/assets/icones/go.svg"
 import { ReactComponent as SqlLogo } from "@/assets/icones/sql.svg"
+import { ReactComponent as AngularLogo} from "@/assets/icones/angular.svg"
+import { ReactComponent as NextLogo} from "@/assets/icones/next.svg"
 import { ReactComponent as MariaDBLogo } from "@/assets/icones/mariadb.svg"
 
 type IconeProps = {
@@ -90,6 +92,10 @@ export default function IconeAndName({ className, link }: IconeProps) {
                 return <GoLogo title="logo Go" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
             case "SQL":
                 return <SqlLogo title="logo SQL" className={classNameDefault} />;
+            case "AngularJS":
+                return <AngularLogo title="logo AngularJS" className={classNameDefault} />;
+            case "NextJS":
+                return <NextLogo title="logo NextJS" className={classNameDefault} />;
             case "MariaDB":
                 return <MariaDBLogo title="logo MariaDB" className={classNameDefault} />;
         }

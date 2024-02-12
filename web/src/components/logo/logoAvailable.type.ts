@@ -37,6 +37,8 @@ type logoAvailable =
     | "Api RESTful"
     | "Golang"
     | "SQL"
+    | "AngularJS"
+    | "NextJS"
     | "MariaDB";
 
 export default logoAvailable;

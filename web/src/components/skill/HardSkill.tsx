@@ -22,11 +22,12 @@ import IconeAndName from "@/components/logo/LogoAndName";
 type SkillsProps = {
     className?: Element['className'],
     skill: logoAvailable,
+    inProgress?: boolean
 }
 
-export default function HardSkill({ className, skill }: SkillsProps) {
+export default function HardSkill({ className, skill, inProgress }: SkillsProps) {
     return (
-        <Skill className={`bg-slate-300 ${className}`}>
+        <Skill className={`${inProgress ? "bg-orange-300" : "bg-slate-300"} ${className}`} inProgress={inProgress}>
             <IconeAndName link={skill} />
         </Skill>
     )
