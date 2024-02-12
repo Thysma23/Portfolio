@@ -17,7 +17,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "@/pages/home/HomeIndex"
-import NavBar from '@/components/navBar/NavBarIndex';
+import NavBar from '@/components/navBar2/NavBarIndex';
 import Objectives from '@/pages/objectives/ObjectivesIndex';
 import Projects from "@/pages/projects/ProjectsIndex"
 import Skills from "@/pages/skills/SkillsIndex"
@@ -26,16 +26,15 @@ import Footer from '@/components/footer/FooterIndex';
 export default function Router() {
   return (
     <BrowserRouter>
-      <header>
+      <div className='flex h-full w-full'>
         <NavBar />
-      </header>
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="objectives" element={<Objectives />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="skills" element={<Skills />} />
-      </Routes>
-      <Footer />
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="objectives" element={<Objectives />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }
