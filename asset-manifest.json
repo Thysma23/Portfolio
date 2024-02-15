@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Porfolio/home/static/css/main.493a6cc1.css",
-    "main.js": "/Porfolio/home/static/js/main.f5836dce.js",
+    "main.js": "/Porfolio/home/static/js/main.8bc87c80.js",
     "static/js/787.7da95b79.chunk.js": "/Porfolio/home/static/js/787.7da95b79.chunk.js",
     "static/media/CvStageDevWebMeunierMathys.pdf": "/Porfolio/home/static/media/CvStageDevWebMeunierMathys.f99696b5826b48fb79fc.pdf",
     "static/media/profil_picture.png": "/Porfolio/home/static/media/profil_picture.4eafeae1843fc87033b1.png",
@@ -37,11 +37,11 @@
     "static/media/css.svg": "/Porfolio/home/static/media/css.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html.svg": "/Porfolio/home/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "main.493a6cc1.css.map": "/Porfolio/home/static/css/main.493a6cc1.css.map",
-    "main.f5836dce.js.map": "/Porfolio/home/static/js/main.f5836dce.js.map",
+    "main.8bc87c80.js.map": "/Porfolio/home/static/js/main.8bc87c80.js.map",
     "787.7da95b79.chunk.js.map": "/Porfolio/home/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.493a6cc1.css",
-    "static/js/main.f5836dce.js"
+    "static/js/main.8bc87c80.js"
   ]
 }
