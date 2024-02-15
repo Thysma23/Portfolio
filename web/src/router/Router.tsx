@@ -24,10 +24,11 @@ import Projects from "@/pages/projects/ProjectsIndex"
 import Skills from "@/pages/skills/SkillsIndex"
 import useVersion from '@/hooks/useVersion';
 import Footer from '@/components/footer/FooterIndex';
+import Redirect from './Redirect';
 
 export default function Router() {
   const { version } = useVersion()
-
+  
   return (
     <BrowserRouter>
       <div className='flex h-full w-screen'>
@@ -37,10 +38,11 @@ export default function Router() {
         }
         <div className={"h-full flex flex-col justify-between " + (version === "full" ? "w-[85vw]" : "w-screen")}>
           <Routes>
-            <Route path="home" element={<Home />} />
-            <Route path="objectives" element={<Objectives />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="skills" element={<Skills />} />
+            <Route path="Portfolio/home" element={<Home />} />
+            <Route path="Portfolio/objectives" element={<Objectives />} />
+            <Route path="Portfolio/projects" element={<Projects />} />
+            <Route path="Portfolio/skills" element={<Skills />} />
+            <Route path="*" element={<Redirect />} />
           </Routes>
           {version === "simplified" && <Footer />}
         </div>
