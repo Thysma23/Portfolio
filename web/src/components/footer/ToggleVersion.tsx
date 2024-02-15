@@ -5,7 +5,7 @@ export default function ToggleVersion() {
 
     return (
         <button className="hover:underline" onClick={() => setVersion("full")}>
-            Passez à la version complète
+            Passez à la version développée
         </button>
     );
 };

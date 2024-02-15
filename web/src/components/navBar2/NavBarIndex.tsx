@@ -14,7 +14,7 @@ export default function NavBarIndex() {
 
             <FolderMain>
                 <nav>
-                    <Folder name="Pages" logo="Pages">
+                    <Folder name="Pages" logo="Pages" open>
                         {routes.map((route, index) => {
                             return (
                                 <File key={index} route={route} />

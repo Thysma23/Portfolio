@@ -5,11 +5,12 @@ import FolderIconsAvailable from "./FolderIconsAvailable";
 type FolderProps = {
     name: string;
     logo: FolderIconsAvailable;
+    open: boolean;
     children?: React.ReactNode;
 };
 
-export default function Folder({ name, logo, children }: FolderProps) {
-    const [isOpen, setOpen] = useState(false)
+export default function Folder({ name, logo, children, open = false }: FolderProps) {
+    const [isOpen, setOpen] = useState(open)
 
     const onClickhandler = () => setOpen(o => !o)
     return (
