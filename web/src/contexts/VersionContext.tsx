@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 
 type VersionContextType = {
     version: "simplified" | "full";
@@ -8,8 +8,24 @@ type VersionContextType = {
 export const VersionContext = createContext<VersionContextType | null>(null);
 
 export const VersionProvider = ({ children }: { children: React.ReactNode }) => {
-    const [version, setVersion] = useState<"simplified" | "full">("full");
+    const initLocalStorageVersion = () => {
+        localStorage.setItem("version", "full");
+    }
+
+    const getLocalStorageVersion = () => {
+        const item = localStorage.getItem("version");
+        if (item === null) {
+            initLocalStorageVersion();
+        }
+        return item as "simplified" | "full";
+    }
+
+    const [version, setVersion] = useState<"simplified" | "full">(getLocalStorageVersion());
     
+    useEffect(() => {
+        localStorage.setItem("version", version);
+    }, [version]);
+
     return (
         <VersionContext.Provider value={{ version, setVersion }}>
             {children}
