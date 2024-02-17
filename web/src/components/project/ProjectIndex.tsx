@@ -39,7 +39,7 @@ export default function ProjectIndex({ repo }: ProjectIndexProps) {
                 <IconeAndName className="mt-5" link={repo.language as logoAvailable} />
                 <span className="place-self-end md:max-xl:place-self-auto">
                     <span className="hidden min-[1700px]:inline-block">Dernière mise à jour :&nbsp;</span>
-                    <span className="inline-block sm:hidden md:inline-block min-[1700px]:hidden">Dernière maj :&nbsp;</span>
+                    <span className="hidden min-[350px]:inline-block sm:hidden md:inline-block min-[1700px]:hidden">Dernière maj :&nbsp;</span>
                     <time dateTime={repo.last_update.toDateString()}>{repo.last_update.toLocaleDateString()}</time>
                 </span>
             </div>

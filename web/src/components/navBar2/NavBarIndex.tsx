@@ -6,7 +6,7 @@ import ToggleVersion from "./ToggleVersion";
 
 export default function NavBarIndex() {
     return (
-        <div className="flex bg-zinc-800 flex-col w-[15vw] h-screen overflow-x-hidden select-none">
+        <aside className="flex bg-zinc-800 flex-col w-[15vw] min-w-[240px] h-screen overflow-x-hidden select-none">
 
             <div className="h-16 flex flex-col justify-center border-b border-zinc-600">
                 <span className="block text-slate-200 text-2xl text-center">Mathys Meunier</span>
@@ -24,6 +24,6 @@ export default function NavBarIndex() {
                 </nav>
             </FolderMain>
             <ToggleVersion />
-        </div>
+        </aside>
     )
 }

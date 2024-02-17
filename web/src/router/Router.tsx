@@ -38,7 +38,6 @@ export default function Router() {
         }
         <div className={"h-full flex flex-col justify-between " + (version === "full" ? "w-[85vw]" : "w-screen")}>
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="objectives" element={<Objectives />} />
             <Route path="projects" element={<Projects />} />

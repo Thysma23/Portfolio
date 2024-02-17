@@ -19,18 +19,20 @@ import BlueRoundButton from "@/components/buttons/BlueRoundButton";
 
 export default function Welcome() {
     return (
-        <div className="text-slate-900 my-24 sm:mt-40 md:my-auto">
-            <p className="text-4xl font-bold">
-                Bonjour,
-                <br />
+        <div className="text-slate-900 my-24 sm:mt-40 md:my-auto ml-4 min-[401px]:ml-0">
+            <p className="text-4xl font-bold text-center md:text-start">
+                Bonjour,&nbsp;
+                <br className="hidden min-[401px]:block" />
                 je suis <span className="text-slate-200">Mathys Meunier</span>,
             </p>
-            <p className="text-xl font-medium">
+            <p className="text-xl font-medium text-center md:text-start">
                 Étudiant en 3<span className="text-sm leading-3">e</span> année de BUT Informatique
             </p>
-            <a href={require("../../assets/cv/CvStageDevWebMeunierMathys.pdf")} download="CvMeunierMathys" target="_blank" rel="noreferrer">
-                <BlueRoundButton className="mt-2">Télécharger mon cv</BlueRoundButton>
-            </a>
+            <div className="flex justify-center w-full md:block">
+                <a href={require("../../assets/cv/CvStageDevWebMeunierMathys.pdf")} download="CvMeunierMathys" target="_blank" rel="noreferrer">
+                    <BlueRoundButton className="mt-2">Télécharger mon cv</BlueRoundButton>
+                </a>
+            </div>
         </div>
     )
 }
