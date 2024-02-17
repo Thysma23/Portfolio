@@ -26,7 +26,7 @@ type ProjectIndexProps = {
 
 export default function ProjectIndex({ repo }: ProjectIndexProps) {
     return (
-        <section className={`mt-10  w-full mr-5 flex flex-col justify-between ${repo.url ? "" : "bg-blue-400"}`}>
+        <section className={`w-full mr-5 flex flex-col justify-between ${repo.url ? "" : "bg-blue-400"}`}>
             <a href={repo.url} target="_blank" rel="noreferrer" className={`flex justify-between ${repo.url ? "text-blue-600 hover:underline" : ""}`}>
                 <h2 className={`${repo.url ? "text-blue-600 hover:underline" : "text-gray-700"}`}>{repo.name}</h2>
                 <div className="flex">

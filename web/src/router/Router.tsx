@@ -36,7 +36,7 @@ export default function Router() {
           ? <NavBarSimplified />
           : <NavBarFull />
         }
-        <div className={"flex justify-between flex-col " + (version === "full" ? "w-[85vw]" : "w-screen")}>
+        <div className={"flex justify-between flex-col " + (version === "full" ? "w-[85vw] h-screen overflow-y-auto" : "w-screen")}>
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="objectives" element={<Objectives />} />

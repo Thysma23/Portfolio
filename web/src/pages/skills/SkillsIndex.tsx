@@ -15,19 +15,20 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import SkillsLanguage from "./SkillsLanguage"
-import SkillsWebs from "./SkillsWeb"
-import SkillsMobiles from "./SkillsMobiles"
-import SkillsBackend from "./SkillsBackend"
-import SkillOthers from "./SkillsTools"
-import SkillsSofts from "./SkillsSofts"
+import SkillsLanguage from "./SkillsLanguage";
+import SkillsWebs from "./SkillsWeb";
+import SkillsMobiles from "./SkillsMobiles";
+import SkillsBackend from "./SkillsBackend";
+import SkillOthers from "./SkillsTools";
+import SkillsSofts from "./SkillsSofts";
+import useVersion from "@/hooks/useVersion";
 
 export default function SkillsIndex() {
-
+    const { version } = useVersion()
     return (
-        <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-5 sm:px-16 md:px-20 lg:px-32 pb-5 w-full">
-            <h1 className="sm:hidden md:block">Mes compétences</h1>
-            <div className="flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 ">
+        <main className={version === "full" ? "pt-4 xl:pt-20 2xl:pt-24 px-5 lg:px-32 w-full pb-16" : "pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-5 sm:px-16 md:px-20 lg:px-32 w-full"}>
+            <h1 className={version === "full" ? "" : "sm:hidden md:block"}>Mes compétences</h1>
+            <div className={version === "full" ? "flex flex-col mt-5 2xl:flex-row 2xl:space-x-4" : "flex flex-col mt-5 sm:mt-0 md:mt-5 2xl:flex-row 2xl:space-x-4 "}>
                 <SkillsLanguage />
                 <div className="w-full">
                     <SkillsWebs />
@@ -36,7 +37,9 @@ export default function SkillsIndex() {
                     <SkillOthers />
                 </div>
             </div>
-            <SkillsSofts />
+            <div className="pb-5">
+                <SkillsSofts />
+            </div>
         </main>
     )
 }

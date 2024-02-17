@@ -1,4 +1,6 @@
 type FolderIconsAvailable = 
-    "Pages";
+    "Pages"
+    | "Contacts"
+    | "Assets";
 
 export default FolderIconsAvailable;

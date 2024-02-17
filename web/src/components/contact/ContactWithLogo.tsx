@@ -1,8 +1,8 @@
-import { ContactInterface } from "@/interface/ContactInterface";
+import ContactInterface from "@/interface/ContactInterface";
 import { ReactComponent as GithubLogo } from "@/assets/icones/github.svg";
-import { ReactComponent as GmailLogo } from "@/assets/icones/gmail.svg";
-import { ReactComponent as MobileLogo } from "@/assets/icones/mobile.svg";
-import { ReactComponent as LinkedInLogo } from "@/assets/icones/linkedin.svg";
+import { ReactComponent as GmailLogo } from "@/assets/icones/contacts/gmail.svg";
+import { ReactComponent as MobileLogo } from "@/assets/icones/contacts/mobile.svg";
+import { ReactComponent as LinkedInLogo } from "@/assets/icones/contacts/linkedin.svg";
 
 type ContactWithLogoProps = {
     className?: Element['className'],

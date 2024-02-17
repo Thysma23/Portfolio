@@ -19,12 +19,15 @@ import ObjectivesInternship from "./ObjectivesInternship";
 import ObjectivesPostUniversity from "./ObjectivesPostUniversity";
 import ObjectivesSchoolTimeLine from "./ObjectivesSchoolTimeLine";
 import ObjectivesPersonal from "./ObjectivesPersonal";
+import useVersion from "@/hooks/useVersion";
 
 export default function ObjectivesIndex() {
+  const { version } = useVersion()
+
   return (
     <main className="pt-16 sm:pt-32 md:pt-16 xl:pt-20 2xl:pt-24 px-5 sm:px-16 md:px-20 lg:px-32 w-full mb-5">
-      <h1 className="sm:hidden md:block">Mes objectifs</h1>
-      <div className="mt-5 sm:mt-0 md:mt-5 2xl:flex 2xl:space-x-4">
+      <h1 className={version === "full" ? "" : "sm:hidden md:block"}>Mes objectifs</h1>
+      <div className={version === "full" ? "mt-5 2xl:flex 2xl:space-x-4" : "mt-5 sm:mt-0 md:mt-5 2xl:flex 2xl:space-x-4"}>
         <div>
           <ObjectivesInternship />
           <ObjectivesPostUniversity />

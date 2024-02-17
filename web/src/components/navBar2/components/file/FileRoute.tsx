@@ -1,14 +1,14 @@
 import { useLocation, Link } from "react-router-dom";
-import { ReactComponent as ReactLogo } from "@/assets/icones/react.svg";
+import { ReactComponent as ReactLogo } from "@/assets/icones/skills/react.svg";
 
-type FileProps = {
+type FileRouteProps = {
     route: {
         name: string;
         link: string;
     }
 };
 
-export default function FileRoute({ route }: FileProps) {
+export default function FileRoute({ route }: FileRouteProps) {
     const location = useLocation();
 
     return (
