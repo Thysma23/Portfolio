@@ -18,7 +18,7 @@
 import { ReactComponent as GithubLogo } from "@/assets/icones/github.svg";
 import { ReactComponent as UnivNantesLogo } from "@/assets/icones/univ-nantes.svg";
 import { useState } from "react"
-import USERNAME from "@/data/USERNAME.json";
+import { USERNAME } from "@/data/const";
 
 type ProjectIndexProps = {
     className?: Element['className'];
