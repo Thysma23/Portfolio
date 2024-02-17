@@ -15,7 +15,7 @@
     along with this program at "http://mathysmeunier/license".
 */
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from "@/pages/home/HomeIndex"
 import NavBarSimplified from '@/components/navBar/NavBarIndex';
 import NavBarFull from '@/components/navBar2/NavBarIndex';
@@ -28,9 +28,9 @@ import Redirect from './Redirect';
 
 export default function Router() {
   const { version } = useVersion()
-  
+
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='flex h-full w-screen'>
         {version === 'simplified'
           ? <NavBarSimplified />
@@ -38,15 +38,16 @@ export default function Router() {
         }
         <div className={"h-full flex flex-col justify-between " + (version === "full" ? "w-[85vw]" : "w-screen")}>
           <Routes>
-            <Route path="Portfolio/home" element={<Home />} />
-            <Route path="Portfolio/objectives" element={<Objectives />} />
-            <Route path="Portfolio/projects" element={<Projects />} />
-            <Route path="Portfolio/skills" element={<Skills />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="objectives" element={<Objectives />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
             <Route path="*" element={<Redirect />} />
           </Routes>
           {version === "simplified" && <Footer />}
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

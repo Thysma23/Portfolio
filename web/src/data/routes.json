@@ -1,22 +1,22 @@
 [
     {
         "name": "Home",
-        "link": "Portfolio/home"
+        "link": "home"
     },
     {
         "name": "Objectifs",
-        "link": "Portfolio/objectives"
+        "link": "objectives"
     },
     {
         "name": "Projets",
-        "link": "Portfolio/projects"
+        "link": "projects"
     },
     {
         "name": "Compétences",
-        "link": "Portfolio/skills"
+        "link": "skills"
     },
     {
         "name": "Réflexions",
-        "link": "Portfolio/reflections"
+        "link": "reflections"
     }
 ]
