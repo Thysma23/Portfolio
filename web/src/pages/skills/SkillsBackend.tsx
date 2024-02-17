@@ -3,7 +3,8 @@ import HardSkill from "@/components/skill/HardSkill";
 
 export default function SkillsBackEnd() {
     const backendSkills: logoAvailable[] = [
-        "Api RESTful", "CodeIgniter", "NodeJS", "MariaDB", "MySQL", "MongoDB", "Oracle Database"];
+        "Api RESTful", "CodeIgniter", "MariaDB", "MySQL", "MongoDB", "Oracle Database"];
+    
     return (
         <section className="mt-5">
             <h2 className="pb-2">

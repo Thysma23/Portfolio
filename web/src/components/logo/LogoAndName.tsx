@@ -37,9 +37,11 @@ import { ReactComponent as AndroidLogo } from "@/assets/icones/android.svg"
 import { ReactComponent as ApiLogo } from "@/assets/icones/api.svg"
 import { ReactComponent as GoLogo } from "@/assets/icones/go.svg"
 import { ReactComponent as SqlLogo } from "@/assets/icones/sql.svg"
-import { ReactComponent as AngularLogo} from "@/assets/icones/angular.svg"
-import { ReactComponent as NextLogo} from "@/assets/icones/next.svg"
+import { ReactComponent as AngularLogo } from "@/assets/icones/angular.svg"
+import { ReactComponent as NextLogo } from "@/assets/icones/next.svg"
 import { ReactComponent as MariaDBLogo } from "@/assets/icones/mariadb.svg"
+import { ReactComponent as VSCODELOGO } from "@/assets/icones/vscode.svg"
+import { ReactComponent as JETBRAINSLOGO } from "@/assets/icones/jetbrains.svg"
 
 type IconeProps = {
     className?: Element['className'],
@@ -47,7 +49,7 @@ type IconeProps = {
 }
 
 export default function IconeAndName({ className, link }: IconeProps) {
-    const classNameDefault = "size-4 inline-block mb-1";
+    const classNameDefault = "size-4 inline-block";
     const getLogo = () => {
         switch (link) {
             case "Kotlin":
@@ -55,41 +57,41 @@ export default function IconeAndName({ className, link }: IconeProps) {
             case "Python":
                 return <PythonLogo title="logo Python" className={classNameDefault} />;
             case "PHP":
-                return <PhpLogo title="logo PHP" className={"inline-block mb-1 -mt-[0.12rem] w-6 h-6"} />;
+                return <PhpLogo title="logo PHP" className={"inline-block -mt-[0.12rem] w-6 h-6"} />;
             case "ReactJS":
                 return <ReactLogo title="logo React" className={classNameDefault} />;
             case "React Native":
                 return <ReactNativeLogo title="logo React Native" className={classNameDefault} />;
             case "CodeIgniter":
-                return <CodeIgniterLogo title="logo CodeIgniter" className={classNameDefault} />;
+                return <CodeIgniterLogo title="logo CodeIgniter" className={"inline-block size-6"} />;
             case "CSS":
                 return <CssLogo title="logo CSS" className={classNameDefault} />;
             case "HTML":
                 return <HtmlLogo title="logo HTML" className={classNameDefault} />;
             case "JavaScript":
-                return <JavaScriptLogo title="logo JavaScript" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
+                return <JavaScriptLogo title="logo JavaScript" className={"inline-block w-4 h-4 mr-[0.12rem]"} />;
             case "NodeJS":
-                return <NodeJSLogo title="logo NodeJS" className={"inline-block w-6 h-6 -mt-2 -mb-1"} />;
+                return <NodeJSLogo title="logo NodeJS" className={"inline-block w-6 h-6 mr-1"} />;
             case "TypeScript":
                 return <TypeScriptLogo title="logo TypeScript" className={classNameDefault} />;
             case "Git":
                 return <GitLogo title="logo Git" className={classNameDefault} />;
             case "MongoDB":
-                return <MongoDBLogo title="logo MongoDB" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
+                return <MongoDBLogo title="logo MongoDB" className={"inline-block size-5 mr-[0.12rem] "} />;
             case "MySQL":
-                return <MySQLLogo title="logo MySQL" className={"inline-block w-8 h-8 -mt-3 -mb-1 -mr-1"} />;
+                return <MySQLLogo title="logo MySQL" className={"inline-block size-12 -mt-3 -mb-2 -mr-1"} />;
             case "Oracle Database":
-                return <OracleDatabaseLogo title="logo Oracle Database" className={"inline-block -mt-2 -mb-1 mr-[0.12rem] r- w-9 h-9"} />;
+                return <OracleDatabaseLogo title="logo Oracle Database" className={"inline-block -mt-2  mr-[0.12rem] -mb-2 r- size-12"} />;
             case "TailwindCSS":
                 return <TailwindCSSLogo title="logo TailwindCSS" className={classNameDefault} />;
             case "OCaml":
                 return <OcamlLogo title="logo OCaml" id="abdabz" className={classNameDefault} />;
             case "Android Studio":
-                return <AndroidLogo title="logo Android Studio" className={classNameDefault} />;
+                return <AndroidLogo title="logo Android Studio" className={"inline-block size-6"} />;
             case "Api RESTful":
-                return <ApiLogo title="logo API" className={classNameDefault} />;
+                return <ApiLogo title="logo API" className={"inline-block size-6"} />;
             case "Golang":
-                return <GoLogo title="logo Go" className={"inline-block w-4 h-4 mr-[0.12rem] mb-1"} />;
+                return <GoLogo title="logo Go" className={"inline-block w-4 h-4 mr-[0.12rem]"} />;
             case "SQL":
                 return <SqlLogo title="logo SQL" className={classNameDefault} />;
             case "AngularJS":
@@ -97,12 +99,16 @@ export default function IconeAndName({ className, link }: IconeProps) {
             case "NextJS":
                 return <NextLogo title="logo NextJS" className={classNameDefault} />;
             case "MariaDB":
-                return <MariaDBLogo title="logo MariaDB" className={classNameDefault} />;
+                return <MariaDBLogo title="logo MariaDB" className={"inline-block size-7"} />;
+            case "VSCode":
+                return <VSCODELOGO title="logo VSCode" className={classNameDefault} />;
+            case "Suite JetBrains":
+                return <JETBRAINSLOGO title="logo JetBrains" className={"inline-block size-7 mr-1"} />;
         }
     };
 
     return (
-        <span className={`inline-block h-5 my-1 ${className}`}>
+        <span className={`inline-flex items-center h-5 my-1 align-middle  ${className}`}>
             {getLogo()}{link}
         </span>
     );

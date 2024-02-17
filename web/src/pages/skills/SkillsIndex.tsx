@@ -19,7 +19,7 @@ import SkillsLanguage from "./SkillsLanguage"
 import SkillsWebs from "./SkillsWeb"
 import SkillsMobiles from "./SkillsMobiles"
 import SkillsBackend from "./SkillsBackend"
-import SkillOthers from "./SkillsOthers"
+import SkillOthers from "./SkillsTools"
 import SkillsSofts from "./SkillsSofts"
 
 export default function SkillsIndex() {

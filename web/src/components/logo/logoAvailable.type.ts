@@ -39,6 +39,8 @@ type logoAvailable =
     | "SQL"
     | "AngularJS"
     | "NextJS"
-    | "MariaDB";
+    | "MariaDB"
+    | "VSCode"
+    | "Suite JetBrains";
 
 export default logoAvailable;
