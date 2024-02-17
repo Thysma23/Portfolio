@@ -27,7 +27,7 @@ const oldConsoleLog = console.log;
 console.log = (...data) => oldConsoleLog(new Date().toLocaleString(), ...data);
 
 // This API is only usefull for getting my github repos and give them to the front, I will add more features later
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   fs.readFile("./repos.json", (err, data) => {
     if (err) {
       console.error(err);
