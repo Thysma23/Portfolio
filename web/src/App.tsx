@@ -22,7 +22,7 @@ import { VersionProvider } from "./contexts/VersionContext";
 function App() {
   useEffect(() => {
     document.body.classList.add(
-      "bg-gray-500",
+      "bg-gray-400",
       "h-screen",
       "overflow-x-hidden")
   })

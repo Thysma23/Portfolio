@@ -23,7 +23,7 @@ export default function Welcome() {
             <p className="text-4xl font-bold text-center md:text-start">
                 Bonjour,&nbsp;
                 <br className="hidden min-[401px]:block" />
-                je suis <span className="text-slate-200">Mathys Meunier</span>,
+                je suis <span className="text-blue-800">Mathys Meunier</span>,
             </p>
             <p className="text-xl font-medium text-center md:text-start">
                 Étudiant en 3<span className="text-sm leading-3">e</span> année de BUT Informatique
