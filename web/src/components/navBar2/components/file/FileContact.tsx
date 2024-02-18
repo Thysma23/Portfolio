@@ -25,7 +25,7 @@ export default function FileContact({ contact }: FileContactProps) {
         }
     }
     return (
-        <a className="text-slate-200 hover:bg-[#37373d] inline-block align-middle" href={contact.url}>
+        <a className="text-slate-200 hover:bg-[#37373d] inline-block align-middle" href={contact.url} target="_blank" rel="noreferrer">
             {getLogo()}{contact.id}
         </a>
     );
