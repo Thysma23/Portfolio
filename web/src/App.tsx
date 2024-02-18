@@ -23,6 +23,7 @@ function App() {
   useEffect(() => {
     document.body.classList.add(
       "bg-gray-400",
+      // "bg-[#292929]",
       "h-screen",
       "overflow-x-hidden")
   })

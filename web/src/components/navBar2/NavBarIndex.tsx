@@ -12,7 +12,7 @@ export default function NavBarIndex() {
 
     const onClickhandler = () => setOpen(o => !o)
     return (
-        <aside className={`flex bg-zinc-800 ${isOpen ? "w-[18vw] min-w-[320px]" : ""} h-screen overflow-x-hidden select-none`
+        <aside className={`flex bg-zinc-800 ${isOpen ? "w-[18vw] min-w-[350px]" : ""} h-screen overflow-x-hidden select-none`
         } >
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             {isOpen && <div className="flex flex-col w-full h-full">

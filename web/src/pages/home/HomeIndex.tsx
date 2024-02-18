@@ -21,6 +21,17 @@ import Welcome from "./Welcome";
 export default function HomeIndex() {
     return (
         <main className="flex flex-col md:flex-row md:justify-around align-middle items-center w-full mb-10 md:mb-0 h-screen">
+            {/* <main className="bg-[#292929] w-full overflow-hidden"
+            style={
+                {
+                    backgroundImage: `url(${require('@/assets/background/home.png')}`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "left",
+                }
+            } POUR UN PROCHAIN BG
+            >
+                <div className="flex flex-col md:flex-row md:justify-around align-middle items-center w-full mb-10 md:mb-0 h-screen blur-0 overflow-hidden backdrop-blur-md"> */}
             <Welcome />
             <ProfilPicture className="w-72 h-72 bg-blue-800 shadow-2xl" />
         </main>
