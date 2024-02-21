@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.cc245a82.css",
-    "main.js": "/Portfolio/static/js/main.e4c1f7b5.js",
+    "main.js": "/Portfolio/static/js/main.d45d9841.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/CvStageDevWebMeunierMathys.pdf": "/Portfolio/static/media/CvStageDevWebMeunierMathys.f99696b5826b48fb79fc.pdf",
     "static/media/profil_picture.png": "/Portfolio/static/media/profil_picture.4eafeae1843fc87033b1.png",
@@ -19,6 +19,7 @@
     "static/media/reactNative.svg": "/Portfolio/static/media/reactNative.29e94b16532f5b8ee755628806a19f4e.svg",
     "static/media/php.svg": "/Portfolio/static/media/php.7fa8613b62399694e8529fc30bbb48d0.svg",
     "static/media/gmail.svg": "/Portfolio/static/media/gmail.b1df03682d45fa2d33841771321e237d.svg",
+    "static/media/docker.svg": "/Portfolio/static/media/docker.fb870cd7268559eb5afda3e1cf44dd53.svg",
     "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.29c502b8546e5ff282a0ea05d863cbfe.svg",
     "static/media/vscode.svg": "/Portfolio/static/media/vscode.8846658301c83c61519607a4c84b8b6d.svg",
     "static/media/mobile.svg": "/Portfolio/static/media/mobile.9183e008a6f3384cc3724af41b46f3de.svg",
@@ -44,11 +45,11 @@
     "static/media/css.svg": "/Portfolio/static/media/css.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "main.cc245a82.css.map": "/Portfolio/static/css/main.cc245a82.css.map",
-    "main.e4c1f7b5.js.map": "/Portfolio/static/js/main.e4c1f7b5.js.map",
+    "main.d45d9841.js.map": "/Portfolio/static/js/main.d45d9841.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc245a82.css",
-    "static/js/main.e4c1f7b5.js"
+    "static/js/main.d45d9841.js"
   ]
 }
